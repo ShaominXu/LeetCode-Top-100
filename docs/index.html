@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="LeetCode Top 100 刷题笔记与进度" />
+  <title>LeetCode Top 100</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-dim: #388bfd66;
+      --success: #3fb950;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .tagline {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .panel h2 {
+      margin: 0 0 0.75rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+    }
+
+    .panel p {
+      margin: 0;
+      color: var(--text);
+    }
+
+    code {
+      font-family: ui-monospace, "SF Mono", "Cascadia Code", monospace;
+      font-size: 0.9em;
+      background: var(--bg);
+      padding: 0.15em 0.4em;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+
+    .steps {
+      margin: 0;
+      padding-left: 1.25rem;
+      color: var(--muted);
+    }
+
+    .steps li {
+      margin-bottom: 0.5rem;
+    }
+
+    .steps li:last-child {
+      margin-bottom: 0;
+    }
+
+    .steps strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.75rem;
+      color: var(--success);
+      margin-top: 0.75rem;
+    }
+
+    .badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 8px var(--success);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>LeetCode Top 100</h1>
+      <p class="tagline">高频题清单与刷题进度（本页为 GitHub Pages 静态站点）</p>
+    </header>
+
+    <section class="panel">
+      <h2>仓库说明</h2>
+      <p>
+        在此仓库中维护题目解法、笔记与分类。将本页作为项目主页，可在 README 中链向公开页面。
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>启用 GitHub Pages</h2>
+      <ol class="steps">
+        <li>打开仓库 <strong>Settings → Pages</strong></li>
+        <li><strong>Build and deployment</strong> 下 Source 选 <strong>Deploy from a branch</strong></li>
+        <li>Branch 选 <code>main</code>，文件夹选 <code>/docs</code>，保存</li>
+        <li>约 1～2 分钟后访问：<code>https://&lt;你的用户名&gt;.github.io/LeetCode-Top-100/</code></li>
+      </ol>
+      <p class="badge">部署完成后刷新即可看到本页</p>
+    </section>
+
+    <section class="panel">
+      <h2>自定义内容</h2>
+      <p>
+        编辑仓库中的 <code>docs/index.html</code> 即可更新站点样式与文案；提交推送后 Pages 会自动重新构建。
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        由 <a href="https://pages.github.com/">GitHub Pages</a> 托管 · 内容与样式可直接在 <code>docs/</code> 目录修改
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
