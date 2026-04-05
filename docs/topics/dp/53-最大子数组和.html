@@ -6,13 +6,15 @@
   <title>53. 最大子数组和</title>
   <style>
     :root {
-      --bg: #0d1117;
-      --surface: #161b22;
-      --border: #30363d;
-      --text: #e6edf3;
-      --muted: #8b949e;
-      --accent: #58a6ff;
-      --btn: #21262d;
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --surface-soft: #f7f9fc;
+      --border: #dbe3ee;
+      --text: #162032;
+      --muted: #5a6b85;
+      --accent: #2b5fc7;
+      --btn: #eef3ff;
+      --title: #0f172a;
     }
 
     * {
@@ -22,8 +24,11 @@
     body {
       margin: 0;
       padding: 1.25rem;
-      font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
-      background: radial-gradient(circle at top right, #1f2a3a, var(--bg) 45%);
+      font-family: "Noto Sans SC", "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(circle at 8% -10%, #eaf0ff 0, transparent 44%),
+        radial-gradient(circle at 100% 0, #f2f7ff 0, transparent 38%),
+        var(--bg);
       color: var(--text);
       line-height: 1.7;
     }
@@ -35,11 +40,14 @@
       border: 1px solid var(--border);
       border-radius: 14px;
       padding: 1.25rem;
+      box-shadow: 0 12px 26px rgba(15, 23, 42, 0.06);
     }
 
     h1 {
       margin: 0 0 0.4rem;
       font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+      font-family: "Noto Serif SC", "Songti SC", "STSong", serif;
+      color: var(--title);
     }
 
     .meta {
@@ -75,13 +83,13 @@
 
     .switch button.active {
       border-color: var(--accent);
-      background: #0b2a4a;
-      color: #dbeafe;
+      background: #e7efff;
+      color: #143f93;
     }
 
     pre {
       margin: 0;
-      background: #0b1118;
+      background: #f8fbff;
       border: 1px solid var(--border);
       border-radius: 10px;
       padding: 0.95rem;
@@ -107,6 +115,16 @@
       color: var(--muted);
     }
 
+    .crumb {
+      margin: 0 0 0.65rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .lead {
+      margin: 0.2rem 0;
+    }
+
     @media (max-width: 640px) {
       body {
         padding: 0.75rem;
@@ -120,11 +138,12 @@
 </head>
 <body>
   <main class="wrap">
+    <p class="crumb"><a href="../../index.html">首页</a> / <a href="../../index.html#topic-dp">动态规划</a> / 53</p>
     <h1>53. 最大子数组和</h1>
     <p class="meta">LeetCode: <a href="https://leetcode.cn/problems/maximum-subarray/" target="_blank" rel="noopener">最大子数组和</a> · 分类：动态规划 / Kadane</p>
 
-    <p>给定整数数组 <code>nums</code>，求连续子数组之和的最大值。</p>
-    <p>核心转移：<code>cur = max(x, cur + x)</code>，全局答案为遍历过程中的 <code>max(cur)</code>。</p>
+    <p class="lead">给定整数数组 <code>nums</code>，求连续子数组之和的最大值。</p>
+    <p class="lead">核心转移：<code>cur = max(x, cur + x)</code>，全局答案为遍历过程中的 <code>max(cur)</code>。</p>
 
     <div class="switch" aria-label="语言切换">
       <button type="button" data-lang="python" class="active">Python</button>
