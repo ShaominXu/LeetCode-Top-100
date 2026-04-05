@@ -37,7 +37,7 @@ plugins:
 extra_css:
   - stylesheets/extra.css
 
-docs_dir: docs2
+docs_dir: docs
 
 nav:
   - 首页: index.md
