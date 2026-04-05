@@ -9,12 +9,11 @@ theme:
   language: zh
   palette:
     - scheme: default
-      primary: blue
+      primary: purple
       accent: indigo
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.expand
     - navigation.top
     - toc.integrate
     - search.suggest
