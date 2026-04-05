@@ -1,12 +1,12 @@
-# LeetCode-Top-100
+# 算法百炼
 
 LeetCode 高频题练习与笔记。
 
-按知识点分类的 Markdown 笔记在 [`docs/topics/`](./docs/topics/README.md)（各子目录一个 `README.md`），与 [`docs/index.html`](./docs/index.html) 中的目录对应。
+按知识点分类的 Markdown 笔记在 `[docs/topics/](./docs/topics/README.md)`（各子目录一个 `README.md`），与 `[docs/index.html](./docs/index.html)` 中的目录对应。
 
 ## GitHub Pages
 
-静态站点源码位于 [`docs/`](./docs/)（入口为 `docs/index.html`）。发布由 [`.github/workflows/pages.yml`](./.github/workflows/pages.yml) 完成（**不经过 Jekyll**）。
+静态站点源码位于 `[docs/](./docs/)`（入口为 `docs/index.html`）。发布由 `[.github/workflows/pages.yml](./.github/workflows/pages.yml)` 完成（**不经过 Jekyll**）。
 
 在仓库 **Settings → Pages** 中：
 
