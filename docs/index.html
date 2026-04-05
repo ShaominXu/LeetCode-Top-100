@@ -34,10 +34,73 @@
       line-height: 1.6;
     }
 
-    .wrap {
-      max-width: 720px;
+    .layout {
+      display: grid;
+      grid-template-columns: 248px minmax(0, 1fr);
+      gap: 1.75rem;
+      max-width: 1180px;
       margin: 0 auto;
-      padding: 3rem 1.5rem 4rem;
+      padding: 1.5rem 1.25rem 3rem;
+      align-items: start;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 1rem;
+      align-self: start;
+      max-height: calc(100vh - 2rem);
+      overflow-y: auto;
+      overscroll-behavior: contain;
+    }
+
+    .sidebar::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .sidebar::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 4px;
+    }
+
+    .sidebar-nav {
+      margin-bottom: 0;
+    }
+
+    .sidebar-nav h2 {
+      font-size: 0.8rem;
+    }
+
+    .sidebar-nav .toc-list {
+      font-size: 0.875rem;
+    }
+
+    .sidebar-nav .toc-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    .sidebar-nav .toc-meta {
+      font-size: 0.8rem;
+    }
+
+    .main {
+      min-width: 0;
+      max-width: 720px;
+      justify-self: start;
+    }
+
+    @media (max-width: 880px) {
+      .layout {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        padding: 1rem 1rem 2.5rem;
+      }
+
+      .sidebar {
+        position: relative;
+        top: auto;
+        max-height: none;
+        overflow: visible;
+      }
     }
 
     header {
@@ -243,46 +306,49 @@
   </style>
 </head>
 <body>
-  <div class="wrap">
+  <div class="layout">
+    <aside class="sidebar" aria-label="侧边目录">
+      <nav class="panel sidebar-nav" id="toc">
+        <h2>目录</h2>
+        <ul class="toc-list">
+          <li>
+            <a href="#topic-array">数组</a>
+            <span class="sub">矩阵、区间、二分查找</span>
+          </li>
+          <li>
+            <a href="#topic-string">字符串</a>
+            <span class="sub">字典树（Trie）</span>
+          </li>
+          <li><a href="#topic-two-pointers">双指针和滑动窗口</a></li>
+          <li><a href="#topic-greedy">贪心算法</a></li>
+          <li><a href="#topic-heap">堆</a></li>
+          <li><a href="#topic-stack-queue">栈和队列</a></li>
+          <li><a href="#topic-hash">哈希表</a></li>
+          <li><a href="#topic-linked-list">链表</a></li>
+          <li>
+            <a href="#topic-binary-tree">二叉树</a>
+            <span class="sub">分治</span>
+          </li>
+          <li><a href="#topic-backtracking">回溯</a></li>
+          <li>
+            <a href="#topic-dp">动态规划</a>
+            <span class="sub">含 Kadane 类区间最值</span>
+          </li>
+          <li><a href="#topic-graph">图论</a></li>
+          <li><a href="#topic-design">设计题</a></li>
+        </ul>
+        <p class="toc-meta">
+          <a href="topics/README.md">知识点 Markdown 总索引</a>
+          （<code>docs/topics/</code>）
+        </p>
+      </nav>
+    </aside>
+
+    <main class="main">
     <header>
       <h1>LeetCode Top 100</h1>
       <p class="tagline">高频题清单与刷题进度（本页为 GitHub Pages 静态站点）</p>
     </header>
-
-    <nav class="panel" id="toc" aria-label="知识点目录">
-      <h2>目录</h2>
-      <ul class="toc-list">
-        <li>
-          <a href="#topic-array">数组</a>
-          <span class="sub">矩阵、区间、二分查找</span>
-        </li>
-        <li>
-          <a href="#topic-string">字符串</a>
-          <span class="sub">字典树（Trie）</span>
-        </li>
-        <li><a href="#topic-two-pointers">双指针和滑动窗口</a></li>
-        <li><a href="#topic-greedy">贪心算法</a></li>
-        <li><a href="#topic-heap">堆</a></li>
-        <li><a href="#topic-stack-queue">栈和队列</a></li>
-        <li><a href="#topic-hash">哈希表</a></li>
-        <li><a href="#topic-linked-list">链表</a></li>
-        <li>
-          <a href="#topic-binary-tree">二叉树</a>
-          <span class="sub">分治</span>
-        </li>
-        <li><a href="#topic-backtracking">回溯</a></li>
-        <li>
-          <a href="#topic-dp">动态规划</a>
-          <span class="sub">含 Kadane 类区间最值</span>
-        </li>
-        <li><a href="#topic-graph">图论</a></li>
-        <li><a href="#topic-design">设计题</a></li>
-      </ul>
-      <p class="toc-meta">
-        <a href="topics/README.md">知识点 Markdown 总索引</a>
-        （<code>docs/topics/</code>）
-      </p>
-    </nav>
 
     <section class="panel">
       <h2>仓库说明</h2>
@@ -404,6 +470,7 @@
         由 <a href="https://pages.github.com/">GitHub Pages</a> 托管 · 内容与样式可直接在 <code>docs/</code> 目录修改
       </p>
     </footer>
+    </main>
   </div>
 </body>
 </html>
