@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" shape-rendering="crispEdges" role="img" aria-labelledby="title desc">
+  <title id="title">锤子像素图</title>
+  <desc id="desc">一把像素风铁锤，象征千锤百炼。</desc>
+  <rect width="160" height="160" fill="#f4efe6"/>
+
+  <!-- shadow -->
+  <rect x="50" y="118" width="62" height="8" fill="#d8cdbd" opacity="0.9"/>
+
+  <!-- sparks -->
+  <rect x="24" y="28" width="8" height="8" fill="#f2b84b"/>
+  <rect x="36" y="20" width="8" height="8" fill="#f2b84b"/>
+  <rect x="44" y="32" width="8" height="8" fill="#f2b84b"/>
+  <rect x="128" y="30" width="8" height="8" fill="#f2b84b"/>
+  <rect x="136" y="20" width="8" height="8" fill="#f2b84b"/>
+  <rect x="122" y="18" width="8" height="8" fill="#f2b84b"/>
+
+  <!-- hammer head outline -->
+  <rect x="38" y="34" width="10" height="10" fill="#2e2723"/>
+  <rect x="48" y="34" width="10" height="10" fill="#2e2723"/>
+  <rect x="58" y="34" width="10" height="10" fill="#2e2723"/>
+  <rect x="68" y="34" width="10" height="10" fill="#2e2723"/>
+  <rect x="78" y="34" width="10" height="10" fill="#2e2723"/>
+  <rect x="88" y="34" width="10" height="10" fill="#2e2723"/>
+  <rect x="98" y="34" width="10" height="10" fill="#2e2723"/>
+  <rect x="108" y="34" width="10" height="10" fill="#2e2723"/>
+  <rect x="118" y="34" width="10" height="10" fill="#2e2723"/>
+
+  <rect x="28" y="44" width="10" height="10" fill="#2e2723"/>
+  <rect x="38" y="44" width="10" height="10" fill="#6c6f75"/>
+  <rect x="48" y="44" width="10" height="10" fill="#8d939c"/>
+  <rect x="58" y="44" width="10" height="10" fill="#9da4ae"/>
+  <rect x="68" y="44" width="10" height="10" fill="#aeb5bf"/>
+  <rect x="78" y="44" width="10" height="10" fill="#b8bfc8"/>
+  <rect x="88" y="44" width="10" height="10" fill="#aeb5bf"/>
+  <rect x="98" y="44" width="10" height="10" fill="#9da4ae"/>
+  <rect x="108" y="44" width="10" height="10" fill="#8d939c"/>
+  <rect x="118" y="44" width="10" height="10" fill="#6c6f75"/>
+  <rect x="128" y="44" width="10" height="10" fill="#2e2723"/>
+
+  <rect x="28" y="54" width="10" height="10" fill="#2e2723"/>
+  <rect x="38" y="54" width="10" height="10" fill="#7a7f88"/>
+  <rect x="48" y="54" width="10" height="10" fill="#b8bfc8"/>
+  <rect x="58" y="54" width="10" height="10" fill="#d5dae1"/>
+  <rect x="68" y="54" width="10" height="10" fill="#dfe3e9"/>
+  <rect x="78" y="54" width="10" height="10" fill="#eff2f5"/>
+  <rect x="88" y="54" width="10" height="10" fill="#dfe3e9"/>
+  <rect x="98" y="54" width="10" height="10" fill="#d5dae1"/>
+  <rect x="108" y="54" width="10" height="10" fill="#b8bfc8"/>
+  <rect x="118" y="54" width="10" height="10" fill="#7a7f88"/>
+  <rect x="128" y="54" width="10" height="10" fill="#2e2723"/>
+
+  <rect x="38" y="64" width="10" height="10" fill="#2e2723"/>
+  <rect x="48" y="64" width="10" height="10" fill="#7a7f88"/>
+  <rect x="58" y="64" width="10" height="10" fill="#d5dae1"/>
+  <rect x="68" y="64" width="10" height="10" fill="#f0f2f6"/>
+  <rect x="78" y="64" width="10" height="10" fill="#f8fafc"/>
+  <rect x="88" y="64" width="10" height="10" fill="#f0f2f6"/>
+  <rect x="98" y="64" width="10" height="10" fill="#d5dae1"/>
+  <rect x="108" y="64" width="10" height="10" fill="#7a7f88"/>
+  <rect x="118" y="64" width="10" height="10" fill="#2e2723"/>
+
+  <!-- handle -->
+  <rect x="74" y="74" width="12" height="10" fill="#2e2723"/>
+  <rect x="70" y="84" width="20" height="10" fill="#2e2723"/>
+  <rect x="66" y="94" width="28" height="10" fill="#2e2723"/>
+  <rect x="62" y="104" width="36" height="10" fill="#2e2723"/>
+  <rect x="58" y="114" width="44" height="10" fill="#2e2723"/>
+  <rect x="54" y="124" width="52" height="10" fill="#2e2723"/>
+  <rect x="50" y="134" width="60" height="10" fill="#2e2723"/>
+
+  <rect x="78" y="74" width="4" height="10" fill="#7a4b23"/>
+  <rect x="74" y="84" width="12" height="10" fill="#8a582b"/>
+  <rect x="70" y="94" width="20" height="10" fill="#9b6732"/>
+  <rect x="66" y="104" width="28" height="10" fill="#a9733a"/>
+  <rect x="62" y="114" width="36" height="10" fill="#b77d42"/>
+  <rect x="58" y="124" width="44" height="10" fill="#c88d50"/>
+  <rect x="54" y="134" width="52" height="10" fill="#d59a5c"/>
+
+  <!-- handle highlight -->
+  <rect x="82" y="84" width="4" height="10" fill="#cfa06a"/>
+  <rect x="78" y="94" width="4" height="10" fill="#ddb27f"/>
+  <rect x="74" y="104" width="4" height="10" fill="#e7c28f"/>
+  <rect x="70" y="114" width="4" height="10" fill="#efcf9f"/>
+  <rect x="66" y="124" width="4" height="10" fill="#f4d9ad"/>
+  <rect x="62" y="134" width="4" height="10" fill="#f7e0b8"/>
+
+  <!-- handle cap -->
+  <rect x="46" y="144" width="68" height="10" fill="#2e2723"/>
+  <rect x="50" y="144" width="60" height="10" fill="#5a3618"/>
+</svg>
