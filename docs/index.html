@@ -205,6 +205,41 @@
     .back-to-toc a:hover {
       color: var(--accent);
     }
+
+    .toc-meta {
+      margin: 1rem 0 0;
+      padding-top: 0.85rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+
+    .toc-meta a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .toc-meta a:hover {
+      text-decoration: underline;
+    }
+
+    .topic-md {
+      margin: 0 0 0.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .topic-md a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .topic-md a:hover {
+      text-decoration: underline;
+    }
+
+    .topic-md code {
+      font-size: 0.85em;
+    }
   </style>
 </head>
 <body>
@@ -243,12 +278,16 @@
         <li><a href="#topic-graph">图论</a></li>
         <li><a href="#topic-design">设计题</a></li>
       </ul>
+      <p class="toc-meta">
+        <a href="topics/README.md">知识点 Markdown 总索引</a>
+        （<code>docs/topics/</code>）
+      </p>
     </nav>
 
     <section class="panel">
       <h2>仓库说明</h2>
       <p>
-        在此仓库中维护题目解法、笔记与分类。将本页作为项目主页，可在 README 中链向公开页面。
+        在此仓库中维护题目解法、笔记与分类；各主题笔记见 <code>docs/topics/&lt;主题&gt;/README.md</code>。将本页作为项目主页，可在 README 中链向公开页面。
       </p>
     </section>
 
@@ -265,85 +304,98 @@
     <section class="panel">
       <h2>自定义内容</h2>
       <p>
-        编辑仓库中的 <code>docs/index.html</code> 即可更新目录与各分类下的题目；推送后由 GitHub Actions 重新部署。
+        编辑 <code>docs/index.html</code> 与各 <code>docs/topics/**/README.md</code>；推送后由 GitHub Actions 重新部署。在 GitHub 仓库内打开 <code>.md</code> 可渲染为易读排版。
       </p>
     </section>
 
     <section class="panel topic" id="topic-array">
       <h3>数组（矩阵、区间、二分查找）</h3>
-      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="topic-md">笔记：<a href="topics/array/README.md"><code>docs/topics/array/README.md</code></a></p>
+      <p class="placeholder">在对应 Markdown 中维护题目表与题解链接。</p>
       <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
     </section>
 
     <section class="panel topic" id="topic-string">
       <h3>字符串（字典树）</h3>
-      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="topic-md">笔记：<a href="topics/string/README.md"><code>docs/topics/string/README.md</code></a></p>
+      <p class="placeholder">在对应 Markdown 中维护题目表与题解链接。</p>
       <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
     </section>
 
     <section class="panel topic" id="topic-two-pointers">
       <h3>双指针和滑动窗口</h3>
-      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="topic-md">笔记：<a href="topics/two-pointers/README.md"><code>docs/topics/two-pointers/README.md</code></a></p>
+      <p class="placeholder">在对应 Markdown 中维护题目表与题解链接。</p>
       <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
     </section>
 
     <section class="panel topic" id="topic-greedy">
       <h3>贪心算法</h3>
-      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="topic-md">笔记：<a href="topics/greedy/README.md"><code>docs/topics/greedy/README.md</code></a></p>
+      <p class="placeholder">在对应 Markdown 中维护题目表与题解链接。</p>
       <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
     </section>
 
     <section class="panel topic" id="topic-heap">
       <h3>堆</h3>
-      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="topic-md">笔记：<a href="topics/heap/README.md"><code>docs/topics/heap/README.md</code></a></p>
+      <p class="placeholder">在对应 Markdown 中维护题目表与题解链接。</p>
       <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
     </section>
 
     <section class="panel topic" id="topic-stack-queue">
       <h3>栈和队列</h3>
-      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="topic-md">笔记：<a href="topics/stack-queue/README.md"><code>docs/topics/stack-queue/README.md</code></a></p>
+      <p class="placeholder">在对应 Markdown 中维护题目表与题解链接。</p>
       <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
     </section>
 
     <section class="panel topic" id="topic-hash">
       <h3>哈希表</h3>
-      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="topic-md">笔记：<a href="topics/hash/README.md"><code>docs/topics/hash/README.md</code></a></p>
+      <p class="placeholder">在对应 Markdown 中维护题目表与题解链接。</p>
       <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
     </section>
 
     <section class="panel topic" id="topic-linked-list">
       <h3>链表</h3>
-      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="topic-md">笔记：<a href="topics/linked-list/README.md"><code>docs/topics/linked-list/README.md</code></a></p>
+      <p class="placeholder">在对应 Markdown 中维护题目表与题解链接。</p>
       <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
     </section>
 
     <section class="panel topic" id="topic-binary-tree">
       <h3>二叉树（分治）</h3>
-      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="topic-md">笔记：<a href="topics/binary-tree/README.md"><code>docs/topics/binary-tree/README.md</code></a></p>
+      <p class="placeholder">在对应 Markdown 中维护题目表与题解链接。</p>
       <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
     </section>
 
     <section class="panel topic" id="topic-backtracking">
       <h3>回溯</h3>
-      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="topic-md">笔记：<a href="topics/backtracking/README.md"><code>docs/topics/backtracking/README.md</code></a></p>
+      <p class="placeholder">在对应 Markdown 中维护题目表与题解链接。</p>
       <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
     </section>
 
     <section class="panel topic" id="topic-dp">
       <h3>动态规划（Kadane 算法）</h3>
-      <p class="placeholder">待补充：题目列表、题解与笔记链接；可单列 Kadane / 最大子数组和相关题。</p>
+      <p class="topic-md">笔记：<a href="topics/dp/README.md"><code>docs/topics/dp/README.md</code></a>（内含 Kadane / 最大子数组小节）</p>
+      <p class="placeholder">在对应 Markdown 中维护题目表与题解链接。</p>
       <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
     </section>
 
     <section class="panel topic" id="topic-graph">
       <h3>图论</h3>
-      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="topic-md">笔记：<a href="topics/graph/README.md"><code>docs/topics/graph/README.md</code></a></p>
+      <p class="placeholder">在对应 Markdown 中维护题目表与题解链接。</p>
       <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
     </section>
 
     <section class="panel topic" id="topic-design">
       <h3>设计题</h3>
-      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="topic-md">笔记：<a href="topics/design/README.md"><code>docs/topics/design/README.md</code></a></p>
+      <p class="placeholder">在对应 Markdown 中维护题目表与题解链接。</p>
       <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
     </section>
 
