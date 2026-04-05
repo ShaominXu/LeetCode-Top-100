@@ -21,6 +21,10 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       min-height: 100vh;
@@ -139,6 +143,68 @@
       background: var(--success);
       box-shadow: 0 0 8px var(--success);
     }
+
+    .toc-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .toc-list li {
+      margin-bottom: 0.65rem;
+      border-left: 2px solid var(--border);
+      padding-left: 0.85rem;
+    }
+
+    .toc-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .toc-list a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .toc-list a:hover {
+      text-decoration: underline;
+    }
+
+    .toc-list .sub {
+      display: block;
+      margin-top: 0.2rem;
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    .panel.topic h3 {
+      margin: 0 0 0.65rem;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    .panel.topic .placeholder {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .back-to-toc {
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+    }
+
+    .back-to-toc a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .back-to-toc a:hover {
+      color: var(--accent);
+    }
   </style>
 </head>
 <body>
@@ -147,6 +213,37 @@
       <h1>LeetCode Top 100</h1>
       <p class="tagline">高频题清单与刷题进度（本页为 GitHub Pages 静态站点）</p>
     </header>
+
+    <nav class="panel" id="toc" aria-label="知识点目录">
+      <h2>目录</h2>
+      <ul class="toc-list">
+        <li>
+          <a href="#topic-array">数组</a>
+          <span class="sub">矩阵、区间、二分查找</span>
+        </li>
+        <li>
+          <a href="#topic-string">字符串</a>
+          <span class="sub">字典树（Trie）</span>
+        </li>
+        <li><a href="#topic-two-pointers">双指针和滑动窗口</a></li>
+        <li><a href="#topic-greedy">贪心算法</a></li>
+        <li><a href="#topic-heap">堆</a></li>
+        <li><a href="#topic-stack-queue">栈和队列</a></li>
+        <li><a href="#topic-hash">哈希表</a></li>
+        <li><a href="#topic-linked-list">链表</a></li>
+        <li>
+          <a href="#topic-binary-tree">二叉树</a>
+          <span class="sub">分治</span>
+        </li>
+        <li><a href="#topic-backtracking">回溯</a></li>
+        <li>
+          <a href="#topic-dp">动态规划</a>
+          <span class="sub">含 Kadane 类区间最值</span>
+        </li>
+        <li><a href="#topic-graph">图论</a></li>
+        <li><a href="#topic-design">设计题</a></li>
+      </ul>
+    </nav>
 
     <section class="panel">
       <h2>仓库说明</h2>
@@ -159,9 +256,8 @@
       <h2>启用 GitHub Pages</h2>
       <ol class="steps">
         <li>打开仓库 <strong>Settings → Pages</strong></li>
-        <li><strong>Build and deployment</strong> 下 Source 选 <strong>Deploy from a branch</strong></li>
-        <li>Branch 选 <code>main</code>，文件夹选 <code>/docs</code>，保存</li>
-        <li>约 1～2 分钟后访问：<code>https://&lt;你的用户名&gt;.github.io/LeetCode-Top-100/</code></li>
+        <li><strong>Source</strong> 选 <strong>GitHub Actions</strong>（由本仓库 workflow 发布 <code>docs/</code>）</li>
+        <li>推送 <code>main</code> 后等待 Actions 完成，访问：<code>https://&lt;你的用户名&gt;.github.io/LeetCode-Top-100/</code></li>
       </ol>
       <p class="badge">部署完成后刷新即可看到本页</p>
     </section>
@@ -169,8 +265,86 @@
     <section class="panel">
       <h2>自定义内容</h2>
       <p>
-        编辑仓库中的 <code>docs/index.html</code> 即可更新站点样式与文案；提交推送后 Pages 会自动重新构建。
+        编辑仓库中的 <code>docs/index.html</code> 即可更新目录与各分类下的题目；推送后由 GitHub Actions 重新部署。
       </p>
+    </section>
+
+    <section class="panel topic" id="topic-array">
+      <h3>数组（矩阵、区间、二分查找）</h3>
+      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
+    </section>
+
+    <section class="panel topic" id="topic-string">
+      <h3>字符串（字典树）</h3>
+      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
+    </section>
+
+    <section class="panel topic" id="topic-two-pointers">
+      <h3>双指针和滑动窗口</h3>
+      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
+    </section>
+
+    <section class="panel topic" id="topic-greedy">
+      <h3>贪心算法</h3>
+      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
+    </section>
+
+    <section class="panel topic" id="topic-heap">
+      <h3>堆</h3>
+      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
+    </section>
+
+    <section class="panel topic" id="topic-stack-queue">
+      <h3>栈和队列</h3>
+      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
+    </section>
+
+    <section class="panel topic" id="topic-hash">
+      <h3>哈希表</h3>
+      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
+    </section>
+
+    <section class="panel topic" id="topic-linked-list">
+      <h3>链表</h3>
+      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
+    </section>
+
+    <section class="panel topic" id="topic-binary-tree">
+      <h3>二叉树（分治）</h3>
+      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
+    </section>
+
+    <section class="panel topic" id="topic-backtracking">
+      <h3>回溯</h3>
+      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
+    </section>
+
+    <section class="panel topic" id="topic-dp">
+      <h3>动态规划（Kadane 算法）</h3>
+      <p class="placeholder">待补充：题目列表、题解与笔记链接；可单列 Kadane / 最大子数组和相关题。</p>
+      <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
+    </section>
+
+    <section class="panel topic" id="topic-graph">
+      <h3>图论</h3>
+      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
+    </section>
+
+    <section class="panel topic" id="topic-design">
+      <h3>设计题</h3>
+      <p class="placeholder">待补充：题目列表、题解与笔记链接。</p>
+      <p class="back-to-toc"><a href="#toc">↑ 返回目录</a></p>
     </section>
 
     <footer>
