@@ -11,5 +11,5 @@
 ## 快速入口
 
 - [专题总览](topics/index.md)
-- [动态规划](topics/dp/README.md)
+- [动态规划](topics/dp/index.md)
 - [53. 最大子数组和](topics/dp/53-最大子数组和.md)
