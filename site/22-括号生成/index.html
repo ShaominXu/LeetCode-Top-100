@@ -2801,6 +2801,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复杂度分析
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3895,6 +3906,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复杂度分析
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3918,19 +3940,17 @@
 <h1 id="_1"><a href="https://leetcode.cn/problems/generate-parentheses/">括号生成</a><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <h2 id="_2">思路<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>回溯构造长度为 <code>2n</code> 的括号串。
-维护已放置左括号数 <code>left</code> 和右括号数 <code>right</code>：
-- <code>left &lt; n</code> 时可放左括号
-- <code>right &lt; left</code> 时可放右括号
-当长度达到 <code>2n</code> 时加入答案。</p>
-<p>时间复杂度：与卡特兰数 C_n 同阶。
-空间复杂度：O(n)（不计输出）。</p>
+维护已放置左括号数 <code>left</code> 和右括号数 <code>right</code>：</p>
+<ul>
+<li><code>left &lt; n</code> 时可放左括号</li>
+<li><code>right &lt; left</code> 时可放右括号
+当长度达到 <code>2n</code> 时加入答案。</li>
+</ul>
 <h2 id="_3">代码<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python3</label><label for="__tabbed_1_2">C++</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
-
-<span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">generateParenthesis</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
         <span class="n">ans</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="n">path</span> <span class="o">=</span> <span class="p">[]</span>
@@ -3988,6 +4008,9 @@
 </div>
 </div>
 </div>
+<h2 id="_4">复杂度分析<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>时间复杂度：与卡特兰数 C_n 同阶。
+空间复杂度：O(n)（不计输出）。</p>
 
 
 

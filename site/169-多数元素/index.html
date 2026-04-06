@@ -603,6 +603,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复杂度分析
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3895,6 +3906,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复杂度分析
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3917,19 +3939,17 @@
 
 <h1 id="_1"><a href="https://leetcode.cn/problems/majority-element/">多数元素</a><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <h2 id="_2">思路<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>Boyer-Moore 投票算法。维护候选值 <code>cand</code> 与计数 <code>cnt</code>：
-- <code>cnt == 0</code> 时更换候选
-- 当前值等于候选则 <code>cnt++</code>，否则 <code>cnt--</code>
-最终候选即多数元素。</p>
-<p>时间复杂度：O(n)。
-空间复杂度：O(1)。</p>
+<p>Boyer-Moore 投票算法。维护候选值 <code>cand</code> 与计数 <code>cnt</code>：</p>
+<ul>
+<li><code>cnt == 0</code> 时更换候选</li>
+<li>当前值等于候选则 <code>cnt++</code>，否则 <code>cnt--</code>
+最终候选即多数元素。</li>
+</ul>
 <h2 id="_3">代码<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python3</label><label for="__tabbed_1_2">C++</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
-
-<span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">majorityElement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
         <span class="n">cand</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
@@ -3959,6 +3979,9 @@
 </div>
 </div>
 </div>
+<h2 id="_4">复杂度分析<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>时间复杂度：O(n)。
+空间复杂度：O(1)。</p>
 
 
 

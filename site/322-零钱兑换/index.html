@@ -3387,6 +3387,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复杂度分析
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3895,6 +3906,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复杂度分析
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3920,15 +3942,11 @@
 <p>完全背包模型。<code>dp[a]</code> 表示凑成金额 <code>a</code> 的最少硬币数，初始化为无穷大，<code>dp[0]=0</code>。
 对每个硬币 <code>c</code>，从 <code>c</code> 到 <code>amount</code> 更新：
 <code>dp[a] = min(dp[a], dp[a-c] + 1)</code>。</p>
-<p>时间复杂度：O(n \cdot amount)。
-空间复杂度：O(amount)。</p>
 <h2 id="_3">代码<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python3</label><label for="__tabbed_1_2">C++</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
-
-<span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">coinChange</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coins</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">amount</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
         <span class="n">INF</span> <span class="o">=</span> <span class="n">amount</span> <span class="o">+</span> <span class="mi">1</span>
         <span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="n">INF</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">amount</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
@@ -3962,6 +3980,9 @@
 </div>
 </div>
 </div>
+<h2 id="_4">复杂度分析<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>时间复杂度：O(n \cdot amount)。
+空间复杂度：O(amount)。</p>
 
 
 

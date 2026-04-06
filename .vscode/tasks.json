@@ -30,6 +30,12 @@
 			"type": "shell",
 			"command": "cd /Users/xusm/Documents/GitHub/leetcode-top-100 && source .venv/bin/activate && mkdocs build --strict",
 			"isBackground": false
+		},
+		{
+			"label": "move-complexity-after-code",
+			"type": "shell",
+			"command": "cd /Users/xusm/Documents/GitHub/leetcode-top-100 && /Users/xusm/Documents/GitHub/leetcode-top-100/.venv/bin/python - <<'PY'\nfrom pathlib import Path\n\nfor path in Path('docs').glob('*.md'):\n    text = path.read_text(encoding='utf-8')\n    lines = text.splitlines()\n    in_code = False\n    complexity = []\n    body = []\n    for line in lines:\n        if line.startswith('```'):\n            in_code = not in_code\n            body.append(line)\n            continue\n        if not in_code and ('时间复杂度' in line or '空间复杂度' in line):\n            if line not in complexity:\n                complexity.append(line)\n            continue\n        body.append(line)\n\n    if complexity:\n        # Insert complexity analysis after the last code fence.\n        insert_at = None\n        for idx in range(len(body) - 1, -1, -1):\n            if body[idx].startswith('```'):\n                insert_at = idx + 1\n                break\n        if insert_at is None:\n            insert_at = len(body)\n\n        trailer = ['','## 复杂度分析',''] + complexity\n        body[insert_at:insert_at] = trailer\n        new_text = '\\n'.join(body) + '\\n'\n        if new_text != text:\n            path.write_text(new_text, encoding='utf-8')\nPY",
+			"isBackground": false
 		}
 	]
 }

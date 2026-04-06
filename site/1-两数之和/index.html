@@ -2134,19 +2134,19 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        暴力法（不推荐）
+        代码
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2154,7 +2154,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        代码
+        复杂度分析
       
     </span>
   </a>
@@ -3924,19 +3924,19 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        暴力法（不推荐）
+        代码
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -3944,7 +3944,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        代码
+        复杂度分析
       
     </span>
   </a>
@@ -3974,22 +3974,17 @@
 <h1 id="_1"><a href="https://leetcode.cn/problems/two-sum/">两数之和</a><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <h2 id="_2">思路<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h3 id="_3">哈希表（推荐）<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>用哈希表 (字典) 记录已遍历的元素及其下标。遍历数组，对于每个元素 <code>num</code>，计算 <code>complement = target - num</code>：
-- 如果 <code>complement</code> 已在哈希表中，找到答案
-- 否则，将当前元素加入哈希表</p>
-<p><strong>时间复杂度</strong>：O(n)<br />
-<strong>空间复杂度</strong>：O(n)</p>
-<h3 id="_4">暴力法（不推荐）<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<p>双层循环，找到符合条件的两个数。<br />
-<strong>时间复杂度</strong>：O(n²)</p>
-<h2 id="_5">代码<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>用哈希表 (字典) 记录已遍历的元素及其下标。遍历数组，对于每个元素 <code>num</code>，计算 <code>complement = target - num</code>：</p>
+<ul>
+<li>如果 <code>complement</code> 已在哈希表中，找到答案</li>
+<li>否则，将当前元素加入哈希表</li>
+</ul>
+<p>暴力法需要双层循环，时间复杂度为 O(n²)，复杂度过高，不采用。</p>
+<h2 id="_4">代码<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python3</label><label for="__tabbed_1_2">C++</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
-
-
-<span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">twoSum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">target</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
         <span class="n">num_map</span> <span class="o">=</span> <span class="p">{}</span>
         <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">nums</span><span class="p">):</span>
@@ -4024,6 +4019,9 @@
 </div>
 </div>
 </div>
+<h2 id="_5">复杂度分析<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p><strong>时间复杂度</strong>：O(n)<br />
+<strong>空间复杂度</strong>：O(n)</p>
 
 
 

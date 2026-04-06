@@ -1411,6 +1411,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复杂度分析
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3895,6 +3906,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复杂度分析
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3917,13 +3939,13 @@
 
 <h1 id="_1"><a href="https://leetcode.cn/problems/find-median-from-data-stream/">数据流的中位数</a><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <h2 id="_2">思路<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>用两个堆：
-- 大根堆 <code>small</code> 存较小一半
-- 小根堆 <code>large</code> 存较大一半
+<p>用两个堆：</p>
+<ul>
+<li>大根堆 <code>small</code> 存较小一半</li>
+<li>小根堆 <code>large</code> 存较大一半
 并保持 <code>small</code> 元素个数等于 <code>large</code> 或多一个。
-中位数根据两堆顶计算。</p>
-<p>时间复杂度：<code>addNum</code> 为 O(\log n)，<code>findMedian</code> 为 O(1)。
-空间复杂度：O(n)。</p>
+中位数根据两堆顶计算。</li>
+</ul>
 <h2 id="_3">代码<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python3</label><label for="__tabbed_1_2">C++</label></div>
 <div class="tabbed-content">
@@ -3978,6 +4000,9 @@
 </div>
 </div>
 </div>
+<h2 id="_4">复杂度分析<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>时间复杂度：<code>addNum</code> 为 O(\log n)，<code>findMedian</code> 为 O(1)。
+空间复杂度：O(n)。</p>
 
 
 

@@ -2607,6 +2607,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复杂度分析
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3895,6 +3906,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复杂度分析
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3917,13 +3939,13 @@
 
 <h1 id="_1"><a href="https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/">二叉树的最近公共祖先</a><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <h2 id="_2">思路<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>后序递归：
-- 若当前结点为空，返回空
-- 若当前结点等于 <code>p</code> 或 <code>q</code>，返回当前结点
-- 递归左右子树，若左右结果都非空，当前结点即最近公共祖先
-- 否则返回非空的那一侧</p>
-<p>时间复杂度：O(n)。
-空间复杂度：O(h)。</p>
+<p>后序递归：</p>
+<ul>
+<li>若当前结点为空，返回空</li>
+<li>若当前结点等于 <code>p</code> 或 <code>q</code>，返回当前结点</li>
+<li>递归左右子树，若左右结果都非空，当前结点即最近公共祖先</li>
+<li>否则返回非空的那一侧</li>
+</ul>
 <h2 id="_3">代码<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python3</label><label for="__tabbed_1_2">C++</label></div>
 <div class="tabbed-content">
@@ -3971,6 +3993,9 @@
 </div>
 </div>
 </div>
+<h2 id="_4">复杂度分析<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>时间复杂度：O(n)。
+空间复杂度：O(h)。</p>
 
 
 
