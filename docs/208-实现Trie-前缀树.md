@@ -12,7 +12,7 @@ Trie 每个节点维护 26 个子节点和结尾标记。
 
 ## 代码
 
-=== "Python"
+=== "Python3"
     ```python
     class TrieNode:
         def __init__(self):

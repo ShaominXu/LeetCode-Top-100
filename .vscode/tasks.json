@@ -24,6 +24,12 @@
 			"type": "shell",
 			"command": "cd /Users/xusm/Documents/GitHub/leetcode-top-100 && source .venv/bin/activate && mkdocs build --strict",
 			"isBackground": false
+		},
+		{
+			"label": "verify-final-build",
+			"type": "shell",
+			"command": "cd /Users/xusm/Documents/GitHub/leetcode-top-100 && source .venv/bin/activate && mkdocs build --strict",
+			"isBackground": false
 		}
 	]
 }
