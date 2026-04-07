@@ -63,28 +63,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs-material
 
-      - name: Adjust mkdocs config for staging
+      - name: Build site
         run: |
           python3 << 'PY'
-          # 修改site_url为staging环境的URL
-          with open('mkdocs.yml', 'r', encoding='utf-8') as f:
-              lines = f.readlines()
-          
-          new_lines = []
-          for line in lines:
-              if 'site_url: https://shaominxu.github.io/leetcode-top-100/' in line:
-                  line = line.replace(
-                      'site_url: https://shaominxu.github.io/leetcode-top-100/',
-                      'site_url: https://shaominxu.github.io/leetcode-top-100/staging/'
-                  )
-              new_lines.append(line)
-          
-          with open('mkdocs.yml', 'w', encoding='utf-8') as f:
-              f.writelines(new_lines)
-          PY
+          from pathlib import Path
 
-      - name: Build site
-        run: mkdocs build --strict
+          src = Path('mkdocs.yml').read_text(encoding='utf-8')
+          dst = src.replace(
+              'site_url: https://shaominxu.github.io/leetcode-top-100/',
+              'site_url: https://shaominxu.github.io/leetcode-top-100/staging/'
+          )
+          Path('mkdocs.staging.yml').write_text(dst, encoding='utf-8')
+          PY
+          mkdocs build --strict -f mkdocs.staging.yml
 
       - name: Deploy to gh-pages staging
         uses: peaceiris/actions-gh-pages@v3
