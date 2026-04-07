@@ -63,6 +63,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs-material
 
+      - name: Adjust mkdocs config for staging
+        run: |
+          sed -i 's|site_url: https://shaominxu.github.io/leetcode-top-100/|site_url: https://shaominxu.github.io/leetcode-top-100/staging/|g' mkdocs.yml
+
       - name: Build site
         run: mkdocs build --strict
 
